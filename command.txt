@@ -1,1 +1,0 @@
-make clean && make && ./multiply_matrix ./test_case/mat100.dat > result/o1/mat100_result.log
