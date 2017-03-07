@@ -1,7 +1,9 @@
-PAPIINC = ~/Desktop/papi-5.5.1/src/
-PAPILIB = ~/Desktop/papi-5.5.1/src/libpapi.a
+# get current Makefile location
+PAPIINC = $(abspath $(lastword $(MAKEFILE_LIST)))/papi-5.5.1/src/
+PAPILIB = $(abspath $(lastword $(MAKEFILE_LIST)))/papi-5.5.1/src/libpapi.a
+
 CC = gcc
-CFLAGS += -I$(PAPIINC) -std=c99 -funroll-all-loops
+CFLAGS += -I$(PAPIINC) -std=c99 -O1 # $(shell $1)
 OS = $(shell uname)
 
 TARGETS_NTHD =  multiply_matrix
