@@ -1,9 +1,9 @@
 # get current Makefile location
-PAPIINC = $(abspath $(lastword $(MAKEFILE_LIST)))/papi-5.5.1/src/
-PAPILIB = $(abspath $(lastword $(MAKEFILE_LIST)))/papi-5.5.1/src/libpapi.a
+PAPIINC = $(shell pwd)/papi-5.5.1/src/
+PAPILIB = $(shell pwd)/papi-5.5.1/src/libpapi.a
 
 CC = gcc
-CFLAGS += -I$(PAPIINC) -std=c99 -O1 # $(shell $1)
+CFLAGS += -I$(PAPIINC) -std=c99 ${type}
 OS = $(shell uname)
 
 TARGETS_NTHD =  multiply_matrix
@@ -40,7 +40,7 @@ endif
 all: $(TARGETS) 
 
 $(TARGETS_NTHD):  %:%.o 
-	$(CC) -o $@ $(CFLAGS) $^  $(LDFLAGS)
+	$(CC) -o $@ $(CFLAGS) $^ $(LDFLAGS)
 
 $(TARGETS_PTHREAD):  %:%.o 
 	$(CC) -o $@ $(CFLAGS) $^  $(LDFLAGS_PTHREAD)
