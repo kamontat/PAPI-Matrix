@@ -1,0 +1,14 @@
+#!/bin/bash
+
+cd "$(dirname "$0")"
+
+tests=("$(ls test_case/* -r)")
+
+for i in "${tests[@]}"
+do
+   make clean && make && ./multiply_matrix "$i"
+done 
+
+# make clean && make 
+
+# ./multiply_matrix ls test_case/* -r
