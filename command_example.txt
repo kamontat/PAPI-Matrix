@@ -1,0 +1,1 @@
+EXAMPLE:  ./helper O1 mat3.dat mar3.result
