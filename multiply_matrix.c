@@ -14,7 +14,7 @@ int **readMatrix(char *fileName) {
 	// read file
 	FILE *fp;
 	fp = fopen(fileName, "r");
-	fscanf(fp, "%d", &MATRIX_SIZE);
+	int count = fscanf(fp, "%d", &MATRIX_SIZE);
 
 	// check memory
     	int **matrix;
@@ -33,7 +33,7 @@ int **readMatrix(char *fileName) {
 	for (int k = 0; k < MATRIX_SIZE; k++)
 		for (j = 0; j < MATRIX_SIZE; j++) {
 		    	int test;
-		    	fscanf(fp, "%d", &test);
+		    	int count = fscanf(fp, "%d", &test);
 		    	matrix[k][j] = test;
 		}
 
