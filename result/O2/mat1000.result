@@ -1,15 +1,15 @@
 
-file: ./test_case/mat1000.dat
+file: ../test_case/mat1000.dat
 There are 11 counters in this system
 Counter Started: 
 
 Read successfully
-The total instructions executed multiply matrix are 3753 
-The total cycles used are 21558 
-CPI = 5.744205 
-Real_time 0.000095 
-Proc_time: 0.000094 
-Total flpops: 0 
-MFLOPS: 0.000000
+The total instructions executed multiply matrix are 7654844569 
+The total cycles used are 55087408264 
+CPI = 7.196411 
+Real_time 29.732313 
+Proc_time: 28.635614 
+Total flpops: 10983 
+MFLOPS: 0.000384
 1 CPU  at 0.000000 Mhz.
  model string is Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 
