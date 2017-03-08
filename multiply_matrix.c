@@ -92,19 +92,32 @@ void run(char *fileName, int to_print)
     free(result);
 }
 
+// only 1 or 2 argument are accepted.
+// 1. input test case file.
+// 2. option to change c -> byte code. 
 int main(int argc, char *argv[])
 {
-    char *c_file_name = *argv++;
-    argc--;
-
-    if (argc != 1)
-    {
+    if (argc != 2 && argc != 3) {
         printf("invalid argument (too many argument)\n");
+        // list all argument
         while (argc--)
         {
-            printf("%s", *argv++);
+            printf("%s, ", *argv++);
         }
         return 1;
+    }
+
+    char *c_file;
+    char *input_file;
+    char *option = "no";
+
+    if (argc == 3) {
+        c_file = *argv++;
+        input_file = *argv++;
+        option = *argv;
+    } else {
+        c_file = *argv++;
+        input_file = *argv;
     }
 
     /******************* Declaring and Initializing *********************/
@@ -133,7 +146,7 @@ int main(int argc, char *argv[])
         exit(1);
     }
 
-    printf("\nfile: %s\n", *argv);
+    printf("\nfile: %s, option: %s\n", input_file, option);
     printf("There are %d counters in this system\n",num_hwcntrs);
 
     if ( (retval = PAPI_start_counters(Events, NUM_EVENTS)) != PAPI_OK)
@@ -142,7 +155,7 @@ int main(int argc, char *argv[])
     printf("Counter Started: \n");
 
     /* code to execute */
-    run(*argv, 0);
+    run(input_file, 0);
 	
     if ( (retval=PAPI_read_counters(values, NUM_EVENTS)) != PAPI_OK)
         ERROR_RETURN(retval);
@@ -165,7 +178,7 @@ int main(int argc, char *argv[])
     }
 
     /* code to execute */
-    run(*argv, 0);
+    run(input_file, 0);
 
     /******************* Stopping FLOPS *************************************/
     if((retval=PAPI_flops(&real_time,&proc_time,&flpops,&mflops)) < PAPI_OK) {
@@ -186,8 +199,8 @@ int main(int argc, char *argv[])
         exit(1);
     }
 
-    printf("%d CPU  at %f Mhz.\n",hwinfo->totalcpus,hwinfo->mhz);
-    printf(" model string is %s \n", hwinfo->model_string);
+    printf("\n%d CPU  at %f Mhz.\n",hwinfo->totalcpus,hwinfo->mhz);
+    printf("model string is %s \n\n", hwinfo->model_string);
     /* clean up */ 
     PAPI_shutdown();
 
