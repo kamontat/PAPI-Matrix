@@ -1,0 +1,6 @@
+./helper O1 mat5000.dat mat5000.result ; 
+./helper O1 mat10000.dat mat10000.result ; 
+./helper O2 mat5000.dat mat5000.result ; 
+./helper O2 mat10000.dat mat10000.result ; 
+
+echo “————Done!————”

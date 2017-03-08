@@ -2,3 +2,4 @@
 multiply_matrix
 test_case.zip
 test_case/
+*.log

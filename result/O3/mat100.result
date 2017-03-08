@@ -4,11 +4,11 @@ There are 11 counters in this system
 Counter Started: 
 
 Read successfully
-The total instructions executed multiply matrix are 13622272 
-The total cycles used are 7879590 
-CPI = 0.578434 
-Real_time 0.008273 
-Proc_time: 0.004265 
+The total instructions executed multiply matrix are 13591977 
+The total cycles used are 5052755 
+CPI = 0.371745 
+Real_time 0.002945 
+Proc_time: 0.002860 
 Total flpops: 0 
 MFLOPS: 0.000000
 1 CPU  at 0.000000 Mhz.
