@@ -1,1 +1,7 @@
-EXAMPLE:  ./helper O1 mat3.dat mar3.result
+EXAMPLE:  ./helper O1 mat3.dat mat3.result
+
+# Explain:
+# 1. ./helper     - my implement script to run easier
+# 2. O1           - gcc optimization compilation 
+# 3. mat3.dat     - testcase file 
+# 4. mat3.result  - result file (show running information like cycle, time etc.)
