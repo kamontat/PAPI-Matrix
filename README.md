@@ -2,8 +2,10 @@
 - Kamontat Chantrachirathumrong 5810546552
 - Soraya Saenna 5810546056
 
-
-
+# Runner
+- Linux Server (Ubuntu 14.04.5 x64)
+  - model string is Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 
+  - 512 MB Memory / 20 GB Disk
 
 # Question & Answer
 ## -O1
