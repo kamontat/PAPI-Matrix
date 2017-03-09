@@ -4,7 +4,7 @@ There are 11 counters in this system
 Counter Started: 
 
 Read successfully
-The total instructions executed multiply matrix are 1141339826365 
+The total instructions executed multiply matrix are 1141339826365 || 1141339.82 MI
 The total cycles used are 8583034143878 
 CPI = 7.520139 
 Real_time 3350.863281 

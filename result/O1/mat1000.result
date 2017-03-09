@@ -4,7 +4,7 @@ There are 11 counters in this system
 Counter Started: 
 
 Read successfully
-The total instructions executed multiply matrix are 7657845803 
+The total instructions executed multiply matrix are 7657845803 || 7657.84 MI
 The total cycles used are 42478986925 
 CPI = 5.547120 
 Real_time 19.025284 
@@ -14,4 +14,3 @@ MFLOPS: 0.000248
 
 1 CPU  at 0.000000 Mhz.
 model string is Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 
-
