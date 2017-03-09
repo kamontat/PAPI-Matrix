@@ -1,0 +1,17 @@
+
+file: ../test_case/mat5000.dat, option: -fsched2-use-superblocks
+There are 11 counters in this system
+Counter Started: 
+
+Read successfully
+The total instructions executed multiply matrix are 3516864982581 
+The total cycles used are 8775241701334 
+CPI = 2.495189 
+Real_time 3416.581543 
+Proc_time: 3409.966309 
+Total flpops: 211125 
+MFLOPS: 0.000062
+
+1 CPU  at 0.000000 Mhz.
+model string is Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 
+
