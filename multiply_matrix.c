@@ -41,6 +41,7 @@ int **readMatrix(char *fileName) {
 	return matrix;
 }
 
+// 3d-loop for multiply matrix
 int **matrixMultiply(int **matrix)
 {
     int **result;
