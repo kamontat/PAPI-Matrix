@@ -11,8 +11,8 @@
   - [fsched2-use-superblocks](#-fsched2-use-superblocks)
   - [funroll-all-loops](#-funroll-all-loops)
 - [Compare](#compare)
-  - [Time](#compare-by-time:)
-  - [MIPs](#compare-mips-(million-instructions-per-second):)
+  - [Time](#compare-by-time)
+  - [MIPs](#compare-mips-million-instructions-per-second)
 
 
 # By
