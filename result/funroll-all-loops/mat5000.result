@@ -1,0 +1,17 @@
+
+file: ../test_case/mat5000.dat, option: -funroll-all-loops
+There are 11 counters in this system
+Counter Started: 
+
+Read successfully
+The total instructions executed multiply matrix are 3516864985928 
+The total cycles used are 8839093443342 
+CPI = 2.513345 
+Real_time 3504.983643 
+Proc_time: 3498.148682 
+Total flpops: 238473 
+MFLOPS: 0.000068
+
+1 CPU  at 0.000000 Mhz.
+model string is Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz 
+
